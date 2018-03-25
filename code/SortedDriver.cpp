@@ -111,7 +111,6 @@ mostIsolated(vector<double> & number)
                     diff = left;
                 }
             }
-
             if ((number[i] < 0) && (number[i + 1] > 0))
             {
                 left = (fabs(number[i - 1]) - fabs(number[i]));
@@ -138,9 +137,7 @@ mostIsolated(vector<double> & number)
                     diff = left;
                 }
             }
-
         }
-
         if (diff > closest)
         {
             closest = diff;
@@ -157,12 +154,14 @@ mostIsolated(vector<double> & number)
 int
 unmatched(list<string> & A, list<string> & B)
 {
+
 	int same =0;
 	B.unique();
 	std:: list<string> ::iterator itA =A.begin();
 	std:: list<string> ::iterator itB =B.begin();
 	while(itA!= A.end() && itB!= B.end())
 	{
+
 		if(*itA==*itB)
 		{
 			same++;
@@ -176,8 +175,10 @@ unmatched(list<string> & A, list<string> & B)
 		{
 			itA++;
 		}
+
 	}
 	return (A.size() -same);
+
 }
 
 
