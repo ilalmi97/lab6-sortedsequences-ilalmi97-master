@@ -3,6 +3,9 @@
 // tom bailey   1445  25 mar 2014
 // Construct sorted sequences and call functions that
 //   process the sorted sequences.
+//ikram lalmi
+//cosc2030
+//03/25/2018
 
 
 #include "RandomUtilities.h"
@@ -68,7 +71,7 @@ mostIsolated(vector<double> & number)
     double closest = 0;
     for (int i = 0; i < number.size()-1; i++)
     {
-			
+
         if (i == 0)
         {
             left = 0;
