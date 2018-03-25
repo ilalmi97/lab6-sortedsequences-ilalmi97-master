@@ -68,6 +68,7 @@ mostIsolated(vector<double> & number)
     double closest = 0;
     for (int i = 0; i < number.size()-1; i++)
     {
+			
         if (i == 0)
         {
             left = 0;
